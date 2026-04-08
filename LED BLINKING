@@ -53,3 +53,6 @@ void loop()
         digitalWrite(led3, state3);
     }
 }
+4. working--
+Three LEDs blink at different speeds using the Arduino.
+millis() is used so all LEDs blink at the same time without delay.
