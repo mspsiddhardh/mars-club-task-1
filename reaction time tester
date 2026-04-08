@@ -1,5 +1,12 @@
-tinker cad link -https://www.tinkercad.com/things/khpEgUXhHK4-reaction-time-tester
-code-
+1.tinker cad link -https://www.tinkercad.com/things/khpEgUXhHK4-reaction-time-tester
+2.Components Required
+-Arduino Uno
+-1 LED
+-1 × 220Ω Resistor
+-Push Button
+-Breadboard
+-Connecting wires
+3.code-
 int ledPin = 8;
 int buttonPin = 2;
 
