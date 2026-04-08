@@ -67,3 +67,6 @@ void loop()
         }
     }
 }
+4.working--
+The potentiometer changes the colour of the RGB LED.
+It also controls how fast another LED blinks.
