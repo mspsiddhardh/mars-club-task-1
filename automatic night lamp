@@ -1,5 +1,5 @@
-tinker cad link -https://www.tinkercad.com/things/0G4dmJVfPzq-automatic-night-lamp
-code-
+1.tinker cad link -https://www.tinkercad.com/things/0G4dmJVfPzq-automatic-night-lamp
+2.code-
 int ldrPin = A0;
 int ledPin = 9;
 
