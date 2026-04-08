@@ -1,1 +1,60 @@
-tinker cad link -
+tinker cad link -https://www.tinkercad.com/things/lQIy30fcsnP-controlling-of-rgbled-and-speed-of-other-led-using-potentiometer
+code-
+int potPin = A0;
+
+int redPin = 9;
+int greenPin = 10;
+int bluePin = 11;
+
+int ledPin = 6;
+
+unsigned long previousTime = 0;
+int ledState = 0;
+
+void setup()
+{
+    pinMode(redPin, OUTPUT);
+    pinMode(greenPin, OUTPUT);
+    pinMode(bluePin, OUTPUT);
+    pinMode(ledPin, OUTPUT);
+}
+
+void loop()
+{
+    int potValue;
+    int value;
+    int interval;
+    unsigned long currentTime;
+
+    potValue = analogRead(potPin);
+
+    // Convert to PWM range
+    value = map(potValue, 0, 1023, 0, 255);
+
+    // RGB control
+    analogWrite(redPin, value);
+    analogWrite(greenPin, 255 - value);
+    analogWrite(bluePin, value / 2);
+
+    // Blinking speed control
+    interval = map(potValue, 0, 1023, 100, 1000);
+
+    currentTime = millis();
+
+    // Non-blocking LED blinking
+    if (currentTime - previousTime >= interval)
+    {
+        previousTime = currentTime;
+
+        if (ledState == 0)
+        {
+            digitalWrite(ledPin, HIGH);
+            ledState = 1;
+        }
+        else
+        {
+            digitalWrite(ledPin, LOW);
+            ledState = 0;
+        }
+    }
+}
