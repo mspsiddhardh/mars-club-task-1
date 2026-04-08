@@ -1,5 +1,14 @@
-tinker cad link -https://www.tinkercad.com/things/lQIy30fcsnP-controlling-of-rgbled-and-speed-of-other-led-using-potentiometer
-code-
+1.tinker cad link -https://www.tinkercad.com/things/lQIy30fcsnP-controlling-of-rgbled-and-speed-of-other-led-using-potentiometer
+2. Components Required
+-Arduino Uno
+-RGB LED
+-3 × 220Ω Resistors (for RGB pins)
+-1 LED (normal LED)
+-1 × 220Ω Resistor (for LED)
+-Potentiometer (10kΩ)
+-Breadboard
+-Connecting wires
+3.code-
 int potPin = A0;
 
 int redPin = 9;
