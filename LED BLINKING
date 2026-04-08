@@ -1,5 +1,11 @@
-TINKER CAD LINK-https://www.tinkercad.com/things/gy9mGBgURAL-blinking-leds-with-different-time-intervals
-code--
+1.TINKER CAD LINK-https://www.tinkercad.com/things/gy9mGBgURAL-blinking-leds-with-different-time-intervals
+2. Components Required
+-Arduino Uno
+-3 LEDs
+-3 × 220Ω Resistors
+-Breadboard
+-Connecting wires
+3.code--
 int led1 = 2;
 int led2 = 3;
 int led3 = 4;
