@@ -46,3 +46,6 @@ void loop()
 
     delay(2000); // wait before next test
 }
+4. working--
+The LED turns ON randomly and the user presses the button quickly.
+Arduino calculates the reaction time using millis() and shows it.
